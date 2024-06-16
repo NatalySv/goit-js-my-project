@@ -1,0 +1,104 @@
+.benefits-wrapper {
+  padding-top: 80px;
+}
+.benefits-section-title {
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.benefits-span {
+  color: #14c57c;
+}
+
+.benefits-list {
+  color: #f0f0f0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 32px;
+}
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(20, 197, 124, 0.1);
+  margin-bottom: 16px;
+}
+.benefits-icon {
+  stroke: #14c57c;
+  fill: rgba(20, 197, 124, 0.1);
+}
+.benefits-hero {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+.benefits-description {
+  font-weight: 300;
+}
+.benefits-description-not {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-wrapper {
+    padding-top: 124px;
+  }
+  .benefits-section-title {
+    margin-bottom: 0;
+  }
+  .benefits-list {
+    display: grid;
+    grid-template-columns: repeat(2, 336px);
+    grid-template-rows: repeat(3, auto);
+  }
+  .benefits-items-list-1 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+  .benefits-items-list-2 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+  .benefits-items-list-3 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+  .benefits-items-list-4 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
+  .benefits-hero {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .benefits-section {
+    background-image: url(../img/benefits-img/benefits-decor.png);
+    background-size: 526px 408px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px) 32px;
+  }
+  .benefits-wrapper {
+    padding-top: 164px;
+  }
+  .benefits-section-title {
+    max-width: 690px;
+  }
+  .benefits-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .benefits-items-list-1 {
+    grid-column-start: 3;
+    grid-row-start: 1;
+  }
+  .benefits-items-list-4 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
+}
